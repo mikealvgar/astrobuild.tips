@@ -1,0 +1,16 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+export interface Props {
+  title: String
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <BaseHead  title="AstroTips" description="My First Page"/>
+<body class="h-screen">
+  <slot />
+</body>
+</html>
